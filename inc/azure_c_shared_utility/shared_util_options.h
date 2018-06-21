@@ -21,6 +21,7 @@ extern "C"
 
     static STATIC_VAR_UNUSED const char* const OPTION_HTTP_PROXY = "proxy_data";
     static STATIC_VAR_UNUSED const char* const OPTION_HTTP_TIMEOUT = "timeout";
+    static STATIC_VAR_UNUSED const char* const OPTION_HTTP_VERBOSE = "verbose";
 
     static STATIC_VAR_UNUSED const char* const OPTION_TRUSTED_CERT = "TrustedCerts";
 
@@ -38,7 +39,8 @@ extern "C"
     static STATIC_VAR_UNUSED const char* const OPTION_CURL_LOW_SPEED_TIME = "CURLOPT_LOW_SPEED_TIME";
     static STATIC_VAR_UNUSED const char* const OPTION_CURL_FRESH_CONNECT = "CURLOPT_FRESH_CONNECT";
     static STATIC_VAR_UNUSED const char* const OPTION_CURL_FORBID_REUSE = "CURLOPT_FORBID_REUSE";
-    static STATIC_VAR_UNUSED const char* const OPTION_CURL_VERBOSE = "CURLOPT_VERBOSE";
+    // keep OPTION_CURL_VERBOSE for compatibility reason
+    static STATIC_VAR_UNUSED const char* const OPTION_CURL_VERBOSE = "verbose";
 
     static STATIC_VAR_UNUSED const char* const OPTION_NET_INT_MAC_ADDRESS = "net_interface_mac_address";
 

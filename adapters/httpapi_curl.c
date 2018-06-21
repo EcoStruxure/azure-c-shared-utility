@@ -693,7 +693,7 @@ HTTPAPI_RESULT HTTPAPI_SetOption(HTTP_HANDLE handle, const char* optionName, con
             httpHandleData->forbidReuse = *(const long*)value;
             result = HTTPAPI_OK;
         }
-        else if (strcmp(OPTION_CURL_VERBOSE, optionName) == 0)
+        else if (strcmp(OPTION_HTTP_VERBOSE, optionName) == 0)
         {
             httpHandleData->verbose = *(const long*)value;
             result = HTTPAPI_OK;
@@ -945,7 +945,7 @@ HTTPAPI_RESULT HTTPAPI_CloneOption(const char* optionName, const void* value, co
             (strcmp(OPTION_CURL_LOW_SPEED_TIME, optionName) == 0) ||
             (strcmp(OPTION_CURL_FRESH_CONNECT, optionName) == 0) ||
             (strcmp(OPTION_CURL_FORBID_REUSE, optionName) == 0) ||
-            (strcmp(OPTION_CURL_VERBOSE, optionName) == 0)
+            (strcmp(OPTION_HTTP_VERBOSE, optionName) == 0)
             )
         {
             /*by convention value is pointing to an long */
